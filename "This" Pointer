@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class Bank_client{
+private:
+int credit_no;
+int cvv;
+string password;
+string user;
+public:
+string name;
+void set_creditcard_no(int no)
+{
+  credit_no = no;
+}
+int  get_creditcard_no1()
+{
+  cout<<"The credit card number is "<<credit_no<<endl;
+  return credit_no;
+}
+void set_allthedataatonce(int no,int user_name,int pass){
+  this->credit_no = no;
+  this->name = name;
+  this->password = pass;
+}
+//this is a pointer;
+
+};
+int main(){
+  Bank_client a,b,c;
+  a.set_creditcard_no(983593);
+  cout<<"The address of this object is "<<&a<<endl;
+  return 0;
+}
